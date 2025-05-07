@@ -5,7 +5,7 @@ SA: S-box Analyzer
 
 AUTHORS:
 
-- Hosein Hadipour (2022-05-26)
+-  (2022-05-26)
 
 EXAMPLES::
 
@@ -49,9 +49,9 @@ EXAMPLES::
 """
 
 #*****************************************************************************
-#       Copyright (C) 2022 Hosein Hadipour <hsn.hadipour@gmail.com>
+#       Copyright (C) 2022  <>
 #*****************************************************************************
-# Copyright (c) 2022 Hosein Hadipour <hsn.hadipour@gmail.com>
+# Copyright (c) 2022  <>
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -128,7 +128,7 @@ class SboxAnalyzer(SBox):
     
     AUTHORS:
 
-    - Hosein Hadipour (2022-05-26)
+    -  (2022-05-26)
 
     REFERENCES:
 

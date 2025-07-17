@@ -85,7 +85,7 @@ pip install --upgrade pip
 pip install minizinc
 ```
 
-To install and activate Gurobi on Linux, we refer to 
+To install and activate Gurobi on Linux, we refer to [GrabGurobi](https://github.com/hadipourh/grabgurobi). 
 
 ## Structure of Our Tool
 

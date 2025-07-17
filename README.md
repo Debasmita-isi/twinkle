@@ -1,8 +1,24 @@
 # Breaking Twinkle Authentication Scheme
 
-This repository includes the source code of the tools we utilized in our paper entitled [Breaking the Twinkle Authentication Scheme and Analyzing Its Underlying Permutation]() accepted in [?]().
+This repository includes the source code of the tools we utilized in our paper entitled [Breaking the Twinkle Authentication Scheme and Analyzing Its Underlying Permutation]() accepted in [SAC 2025](https://sacworkshop.org/SAC25/).
+
+## Abstract
+
+[Twinkle](https://cic.iacr.org/p/1/2/20) is a low-latency authenticated encryption scheme designed by researchers affiliated with [Huawei](https://www.huawei.com/eu/) and [Hisilicon Technologies](https://www.hisilicon.com/en). 
+In our analysis, we show that several versions of Twinkle authenticated encryption (Twinkle-AE), which use a 1024- or 512-bit key for authentication and provide a tag of 64 or 128 bits, can be broken with only $O(2^{t})$ decryption queries, with "t" being the tag length. Specifically, the authentication key can be efficiently recovered, enabling universal forgery of ciphertexts for any plaintext. This highlights vulnerabilities in chosen-ciphertext scenarios when confidentiality is higher than integrity. 
+In addition, we applied the method proposed at [CRYPTO 2024](https://eprint.iacr.org/2024/255) to derive differential-linear distinguishers for up to 6 rounds of the underlying permutation in the Twinkle scheme. 
+We note that Twinkle-AE-b and Twinkle-PA remain secure, and the versions we attacked would also be secure if the claimed confidentiality level matched the integrity level. 
+
+## From ASK 2024 (India) to SAC 2025 (Canada)
+
+We started this work at ASK 2024 in India. 
+We would also like to thank the organizers of ASK 2024. 
+This is a joint work with [Yu Sasaki](https://dblp.org/pid/46/2899.html), [Mostafizar Rahman](https://dblp.org/pid/234/4855.html), Prathamesh Ram, Debasmita Chakraborty, Anup Kumar Kundu, Dilip Sau, and Aman Sinha.
+
 
 - [Breaking Twinkle Authentication Scheme](#breaking-twinkle-authentication-scheme)
+  - [Abstract](#abstract)
+  - [From ASK 2024 (India) to SAC 2025 (Canada)](#from-ask-2024-india-to-sac-2025-canada)
   - [Requirements](#requirements)
   - [Installation](#installation)
   - [Structure of Our Tool](#structure-of-our-tool)
@@ -12,16 +28,18 @@ This repository includes the source code of the tools we utilized in our paper e
   - [Division-Property-Based Integral Distinguishers](#division-property-based-integral-distinguishers)
   - [Differential-Linear Distinguishers](#differential-linear-distinguishers)
   - [Experimental Verification](#experimental-verification)
+  - [License](#license)
 
 ## Requirements
 
 Our tool requires the following software:
 
-- [Python3](https://www.python.org/downloads/) 
+- [Python 3](https://www.python.org/downloads/) 
 - [MiniZinc](https://www.minizinc.org/) to compile and solve our CP models.
-- [latexmk](https://www.latex-project.org/) to build the `.tex` file and generate the shapes of our attacks (can be replaced by just calling `lualatex` directly).
-- [Or-Tools](https://developers.google.com/optimization) to solve our CP models.
-- [Gurobi](https://www.gurobi.com/downloads/gurobi-software/) to count the number of ID distinguishers for ForkSKINNY and SKINNY.
+- [latexmk](https://www.latex-project.org/) to build the `.tex` files and generate the shapes of our attacks (you can also use `lualatex` directly).
+- [OR-Tools](https://developers.google.com/optimization) to solve our CP models.
+- [Gurobi](https://www.gurobi.com/downloads/gurobi-software/) to solve our CP models, specifically for the division property tool.
+
 
 ## Installation
 
@@ -171,5 +189,11 @@ For example, the 6-round differential-linear distinguisher looks like this:
 
 We have provided several script to experimentally verify our practical distinguishers. 
 You can find the scripts within [verification](./verification) folder.
+
+## License
+[![GPLv3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+This project is licensed under the GNU General Public License v3.0 (GPLv3).  
+See [LICENSE](./LICENSE) for details.
 
 

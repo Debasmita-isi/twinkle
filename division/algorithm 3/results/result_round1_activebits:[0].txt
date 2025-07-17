@@ -1,6 +1,0 @@
-
-Integral Distinguisher do NOT exist
-
-Those are the coordinates set to zero: 
-
-Time used = 0.061638593673706055

@@ -1,4 +1,4 @@
-# Breaking Twinkle Authentication Encryption Scheme
+# Breaking Twinkle Authenticated Encryption Scheme
 
 This repository includes the source code of the tools we utilized in our paper entitled [Breaking the Twinkle Authentication Scheme and Analyzing Its Underlying Permutation]() accepted in [SAC 2025](https://sacworkshop.org/SAC25/).
 
@@ -16,7 +16,7 @@ We would also like to thank the organizers of ASK 2024.
 This is a joint work with [Yu Sasaki](https://dblp.org/pid/46/2899.html), [Mostafizar Rahman](https://dblp.org/pid/234/4855.html), Prathamesh Ram, Debasmita Chakraborty, Anup Kumar Kundu, Dilip Sau, and Aman Sinha.
 
 
-- [Breaking Twinkle Authentication Encryption Scheme](#breaking-twinkle-authentication-encryption-scheme)
+- [Breaking Twinkle Authenticated Encryption Scheme](#breaking-twinkle-authenticated-encryption-scheme)
   - [Abstract](#abstract)
   - [From ASK 2024 (India) to SAC 2025 (Canada)](#from-ask-2024-india-to-sac-2025-canada)
   - [Requirements](#requirements)
